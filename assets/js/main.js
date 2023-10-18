@@ -11,7 +11,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("main"),
-  smooth: true
+  smooth: true,
+  smartphone: {
+    smooth: true
+  },
+  tablet: {
+      smooth: true
+  }
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
@@ -40,6 +46,7 @@ ScrollTrigger.refresh();
 
 var timeline1 = gsap.timeline();
 var timeline2 = gsap.timeline();
+var timeline3 = gsap.timeline();
 
 timeline1.to('.circle-php', {
   opacity: 1,
@@ -64,7 +71,7 @@ gsap.to('.circle-laravel', {
 
 timeline2.to('.banner-avater img',{ 
   opacity: 1,
-  delay: 0.5,
+  delay: 1,
   duration: 1,
 })
 timeline2.to('.brand',{ 
@@ -76,4 +83,25 @@ gsap.to('.brand',{
   repeat: -1,
   ease: "linear",
   repeat: -1,
+})
+timeline3.to('.hashtags li',{
+  opacity: 1,
+  delay: 0.5,
+  stagger: 0.3,
+})
+timeline3.to('.banner-h h1',{
+  opacity: 1,
+  stagger: 0.3,
+})
+timeline3.to('.banner-p',{
+  opacity: 1,
+  stagger: 0.3,
+})
+timeline3.to('button',{
+  opacity: 1,
+  stagger: 0.3,
+})
+timeline3.to('.banner-social-list li',{
+  opacity: 1,
+  stagger: 0.3,
 })

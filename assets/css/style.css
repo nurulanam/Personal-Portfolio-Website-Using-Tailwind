@@ -12,4 +12,7 @@
     .nav-list-item{
         @apply text-white font-medium;
     }
+    .btn-red{
+        @apply bg-red-main text-white transition-all ease-linear hover:bg-red-600 font-medium px-6 py-3 rounded-lg;
+    }
 }
