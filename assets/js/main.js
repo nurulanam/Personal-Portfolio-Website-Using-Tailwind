@@ -105,3 +105,14 @@ timeline3.to('.banner-social-list li',{
   opacity: 1,
   stagger: 0.3,
 })
+
+gsap.to('.about-me-img',{
+  opacity: 1,
+  scrollTrigger:{
+    trigger: '.about-me-img',
+    scroller: 'main',
+    start: 'top 60%',
+    end: '+=10%',
+    scrub: 2,
+}
+})

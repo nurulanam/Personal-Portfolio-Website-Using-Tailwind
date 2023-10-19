@@ -99,14 +99,14 @@
         <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
           <div class="col-span-12 md:col-span-6" data-scroll data-scroll-speed="3">
             <div class="flex justify-center md:justify-start relative">
-              <img src="./img/about-me.png" alt="">
+              <img src="./img/about-me.png" class="about-me-img opacity-0" alt="">
               <div class="circle-life absolute top-20 left-80 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-1">
                 <p class="leading-[48px] text-xs font-bold">Life</p>
               </div>
             </div>
           </div>
           <div class="col-span-12 md:col-span-6 text-center md:text-end text-white">
-            <h2 class="text-[58px] leading-none font-semibold pb-12">About <span class="text-red-main">Me</span></h2>
+            <h2 class="h2 pb-12" data-scroll data-scroll-speed="0.3">About <span class="text-red-main">Me</span></h2>
             <p class="pb-6">Renowned for crafting clean, modern, eye-catching designs paired with highly adaptable code. Committed to perpetual learning, staying ahead of trends, and ensuring impeccable functionality and responsiveness</p>
             <p class="pb-6">I possess expertise in a range of technologies, including Laravel, PHP, JavaScript, jQuery, Tailwind CSS, and Bootstrap. This diverse skill set enables me to excel in various aspects of web development and design</p>
             <div class="skill-images flex justify-center flex-wrap md:justify-end items-center gap-4 pb-12">
@@ -119,14 +119,61 @@
               <img src="./img/laravel.png" alt="">
               <img src="./img/github.png" alt="">
             </div>
-            <button class="btn-red">Recent Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right"></i></span></button>
+            <a href="#recentProjectsSection" class="btn-red" data-scroll-to>Recent Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right"></i></span></a>
           </div>
         </div>
       </div>
-      <div class="left-gredient absolute left-0 top-0 min-w-[20vw] min-h-full bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]">
+      <div class="left-gredient absolute left-0 top-0 min-w-[20vw] min-h-full bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]"></div>
+    </section>
+    <!-- about me section end  -->
 
+    <!-- recent projects section start  -->
+    <section class="recent-projects min-h-screen py-12 md:py-12 flex items-center bg-black-main relative" id="recentProjectsSection" data-scroll data-scroll-section>
+      <div class="container px-4">
+        <div class="Recent heading flex flex-col gap-3 md:flex-row  justify-between items-center pb-12">
+          <h2 class="h2 text-white">Recent <span class="text-red-main">Projects</span></h2>
+          <p class="text-white text-center md:text-end shrink-0">Crafting Excellence,<br> One Project at a Time</p>
+        </div>
+    
+        <div class="flex flex-col">
+          <!-- recent projet items  -->
+          <div class="group">
+            <div class="flex flex-col md:flex-row transition-all duration-200 ease-linear group-hover:bg-red-main group-hover:px-4 justify-between items-center relative group text-white border-t-[1px] border-red-main py-6"> 
+              <p class="md:group-hover:opacity-0 text-center md:text-start font-semibold transition-all ease-linear">laravel, Bootstrap</p>
+              <img src="./img/bannergredient1.png" class="absolute left-5 z-40 max-h-36 transition-all duration-200 ease-linear opacity-0 md:group-hover:opacity-100 border-[3px] border-red-main rounded-xl" alt="">
+              <div class="text-center md:text-end">
+                <h4 class="text-[22px] font-semibold pb-3">Third Estate Research Application</h4>
+                <h4>A research company for collaborate participants to researchers.</h4>
+              </div>
+            </div>
+         </div>
+
+         <div class="group">
+            <div class="flex flex-col md:flex-row transition-all duration-200 ease-linear group-hover:bg-red-main group-hover:px-4 justify-between items-center relative group text-white border-t-[1px] border-red-main py-6"> 
+              <p class="md:group-hover:opacity-0 text-center md:text-start font-semibold transition-all ease-linear">laravel, Tailwind</p>
+              <img src="./img/bannergredient1.png" class="absolute left-5 z-40 max-h-36 transition-all duration-200 ease-linear opacity-0 md:group-hover:opacity-100 border-[3px] border-red-main rounded-xl" alt="">
+              <div class="text-center md:text-end">
+                <h4 class="text-[22px] font-semibold pb-3">Blog Management System</h4>
+                <h4>Full blog management system with Seo optimizations.</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex flex-col md:flex-row transition-all duration-200 ease-linear group-hover:bg-red-main group-hover:px-4 justify-between items-center relative group text-white border-t-[1px] border-red-main py-6"> 
+              <p class="md:group-hover:opacity-0 text-center md:text-start font-semibold transition-all ease-linear">laravel, Tailwind</p>
+              <img src="./img/projects/pos.png" class="absolute left-5 z-40 max-h-36 transition-all duration-200 ease-linear opacity-0 md:group-hover:opacity-100 border-[3px] border-red-main rounded-xl" alt="">
+              <div class="text-center md:text-end">
+                <h4 class="text-[22px] font-semibold pb-3">lara - Point Of  sale</h4>
+                <h4>a full Shop sell Management system.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- recent projects section end  -->
+
   </main>
 
 
