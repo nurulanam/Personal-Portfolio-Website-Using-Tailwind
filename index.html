@@ -46,7 +46,7 @@
             </div>
             <p class="banner-p text-center md:text-start text-white opacity-0 pt-5 xl:pe-80">I take pride in my ability to deliver solutions that not only meet but exceed your expectations.</p>
             <a href="#aboutMe" class="flex justify-center md:justify-start" data-scroll-to>
-              <button type="button" class="btn-red mt-12 opacity-0">Know More <span class="ms-1"><i class="fa-solid fa-arrow-up-right"></i></span></button></a>
+              <button type="button" class="btn-red mt-12 opacity-0 group">Know More <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button></a>
             <ul class="banner-social-list flex items-center justify-center md:justify-start gap-4 mt-6">
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
                 <a href=""><img src="./svg/github.svg" alt=""></a>
@@ -210,6 +210,58 @@
       </div>
     </section>
     <!-- recent projects section end  -->
+
+    <!-- testimonial section start  -->
+    <section class="testimonial-section min-h-screen flex items-center relative after:bg-[url('./img/grid-white.png')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
+      <div class="container px-4">
+        <div class="flex flex-col justify-end md:text-end mb-12">
+          <h2 class="h2 text-white pb-6">What they <span class="text-red-main">said</span></h2>
+          <p class="leading-tight text-white">Impressions and Feedback of Satisfied Clients - Real Stories,<br> Real Experiences with Our Services.</p>
+        </div>
+        <div class="grid grid-cols-12 items-center">
+          <div class="col-span-6">
+            <div class="flex justify-start items-start gap-4">
+              <div class="quote shrink-0 -mt-6">
+                <span class="text-red-main text-[64px]"><i class="fa-solid fa-quote-right fa-flip-horizontal"></i></span>
+              </div>
+              <div class="testimonial-content">
+                <div class="testimonial-items">
+                  <div data-id="">
+                  <p class="text-white text-xl font-medium leading-normal">Working with Anam on my website redesign was a fantastic experience. They took my vision and turned it into a stunning website that exceeded my expectations. Anam is not only a talented web designer but also a great communicator. I appreciated their attention to detail and the way they made my website user-friendly and visually appealing</p>
+                  <div class="testimonial-user-data py-6">
+                    <h4 class="text-red-main text-xl font-medium leading-normal">Jhon Doe</h4>
+                    <p class="text-white">Project manager</p>
+                  </div>
+                </div>
+                </div>
+                <div class="testimonial-controller flex justify-start gap-3">
+                  <span class="text-white"><i class="fa-solid fa-arrow-left-long"></i></span>
+                  <span class="text-red-main"><i class="fa-solid fa-arrow-right-long"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-6 justify-items-end">
+            <div class="flex flex-col items-end justify-between gap-5 text-end">
+              <a href="#">
+                <img src="./img/testimonial/testimonial-client-1.png" alt="">
+              </a>
+              <a href="#">
+                <img src="./img/testimonial/testimonial-client-1.png" alt="">
+              </a>
+              <a href="#">
+                <img src="./img/testimonial/testimonial-client-1.png" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="left-gredient absolute right-0 top-0 min-w-[20vw] min-h-full bg-gradient-to-b from-transparent via-red-main/40 to-red-main -z-[1]"></div>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black-main via-black-main/25 to-transparent min-h-[250px] -z-[2]"></div>
+      <div class="absolute top-0 left-0 right-0 bg-gradient-to-t from-transparent via-black-main/40 to-black-main min-h-[250px] -z-[2]"></div>
+    </section>
+    <!-- testimonial section end  -->
 
   </main>
 

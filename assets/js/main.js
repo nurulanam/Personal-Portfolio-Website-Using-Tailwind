@@ -84,23 +84,21 @@ gsap.to('.brand',{
   ease: "linear",
   repeat: -1,
 })
+timeline1.to('.banner-h h1',{
+  opacity: 1,
+  stagger: 0.3,
+})
+timeline1.to('.banner-p',{
+  opacity: 1,
+})
+timeline1.to('button',{
+  opacity: 1,
+})
 timeline3.to('.hashtags li',{
   opacity: 1,
-  delay: 0.5,
-  stagger: 0.3,
+  stagger: 0.5,
 })
-timeline3.to('.banner-h h1',{
-  opacity: 1,
-  stagger: 0.3,
-})
-timeline3.to('.banner-p',{
-  opacity: 1,
-  stagger: 0.3,
-})
-timeline3.to('button',{
-  opacity: 1,
-  stagger: 0.3,
-})
+
 timeline3.to('.banner-social-list li',{
   opacity: 1,
   stagger: 0.3,
