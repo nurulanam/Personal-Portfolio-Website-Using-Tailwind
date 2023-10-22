@@ -16,6 +16,6 @@
         @apply bg-red-main text-white transition-all ease-linear hover:bg-red-600 font-medium px-6 py-3 rounded-lg;
     }
     .h2{
-        @apply text-5xl lg:text-[58px] leading-none font-semibold;
+        @apply text-[45px] lg:text-[58px] leading-none font-semibold;
     }
 }
