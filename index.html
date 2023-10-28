@@ -6,12 +6,12 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"> -->
 </head>
 
 <body class="overflow-x-hidden bg-dark-main">
   <header class="px-4">
-    <nav class="bg-red-main fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full flex justify-between xl:max-w-3xl max-w-md mx-auto mt-4 px-6 md:px-12 py-3 md:py-5 rounded-full">
+    <nav class="bg-red-main shadow-lg fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full flex justify-between xl:max-w-3xl max-w-md mx-auto mt-4 px-6 md:px-12 py-3 md:py-5 rounded-full">
       <a href="./index.html" class="logo text-white font-medium text-2xl">Logo</a>
       <ul class="flex justify-end items-center gap-5">
         <li>
@@ -219,56 +219,55 @@
           <h2 class="h2 text-white pb-6">What they <span class="text-red-main">said</span></h2>
           <p class="leading-tight text-white">Impressions and Feedback of Satisfied Clients - Real Stories,<br> Real Experiences with Our Services.</p>
         </div>
-        <div class="grid grid-cols-12 items-center gap-y-10 md:gap-y-0">
-          <div class="col-span-12 order-2 md:order-1 md:col-span-8 xl:col-span-6">
-            <div class="flex flex-col md:flex-row justify-center md:justify-start items-start md:gap-6">
-              <div class="quote shrink-0 -mt-6">
-                <span class="text-red-main text-[64px]"><i class="fa-solid fa-quote-right fa-flip-horizontal"></i></span>
+          <div class="grid grid-cols-12 items-center gap-y-10 md:gap-y-0">
+            <div class="col-span-12 order-2 md:order-1 md:col-span-8 xl:col-span-6">
+              <div class="flex flex-col md:flex-row justify-center md:justify-start items-start md:gap-6">
+                <div class="quote shrink-0 -mt-6">
+                  <span class="text-red-main text-[64px]"><i class="fa-solid fa-quote-right fa-flip-horizontal"></i></span>
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-item text-center md:text-start block">
+                    <p class="text-white text-xl font-medium leading-normal">Working with Anam on my website redesign was a fantastic experience. They took my vision and turned it into a stunning website that exceeded my expectations. Anam is not only a talented web designer but also a great communicator. I appreciated their attention to detail and the way they made my website user-friendly and visually appealing.</p>
+                    <div class="testimonial-user-data py-6">
+                      <h4 class="text-red-main text-xl font-medium leading-normal">Jhon Doe</h4>
+                      <p class="text-white">Project manager</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-item hidden">
+                    <p class="text-white text-xl font-medium leading-normal">Working with Anam on my website redesign was a fantastic experience. They took my vision and turned it into a stunning website that exceeded my expectations. Anam is not only a talented web designer but also a great communicator. I appreciated their attention to detail and the way they made my website user-friendly and visually appealing.</p>
+                    <div class="testimonial-user-data py-6">
+                      <h4 class="text-red-main text-xl font-medium leading-normal">Jhon Doe</h4>
+                      <p class="text-white">Project manager</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-item hidden">
+                    <p class="text-white text-xl font-medium leading-normal">Working with Anam on my website redesign was a fantastic experience. They took my vision and turned it into a stunning website that exceeded my expectations. Anam is not only a talented web designer but also a great communicator. I appreciated their attention to detail and the way they made my website user-friendly and visually appealing.</p>
+                    <div class="testimonial-user-data py-6">
+                      <h4 class="text-red-main text-xl font-medium leading-normal">Jhon Doe</h4>
+                      <p class="text-white">Project manager</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-controller flex justify-center md:justify-start gap-3">
+                    <span class="text-white controller-left"><i class="fa-solid fa-arrow-left-long"></i></span>
+                    <span class="text-red-main controller-right"><i class="fa-solid fa-arrow-right-long"></i></span>
+                  </div>
+                </div>
               </div>
-              <div class="testimonial-content">
-                <div class="testimonial-items text-center md:text-start block">
-                  <p class="text-white text-xl font-medium leading-normal">Working with Anam on my website redesign was a fantastic experience. They took my vision and turned it into a stunning website that exceeded my expectations. Anam is not only a talented web designer but also a great communicator. I appreciated their attention to detail and the way they made my website user-friendly and visually appealing.</p>
-                  <div class="testimonial-user-data py-6">
-                    <h4 class="text-red-main text-xl font-medium leading-normal">Jhon Doe</h4>
-                    <p class="text-white">Project manager</p>
-                  </div>
+            </div>
+            <div class="col-span-12 order-1 md:order-2 md:col-span-4 xl:col-span-6 justify-items-end">
+              <div class="flex md:flex-col items-end justify-center md:justify-between gap-4 md:gap-10 text-end">
+                <div class="max-h-28 max-w-[60px] md:max-w-[112px] controller-1 rounded-full">
+                  <img src="./img/testimonial/testimonial-client-1.png" class="" alt="">
                 </div>
-                <div class="testimonial-items hidden">
-                  <p class="text-white text-xl font-medium leading-normal">Working with Anam on my website redesign was a fantastic experience. They took my vision and turned it into a stunning website that exceeded my expectations. Anam is not only a talented web designer but also a great communicator. I appreciated their attention to detail and the way they made my website user-friendly and visually appealing.</p>
-                  <div class="testimonial-user-data py-6">
-                    <h4 class="text-red-main text-xl font-medium leading-normal">Jhon Doe</h4>
-                    <p class="text-white">Project manager</p>
-                  </div>
+                <div class="max-h-28 max-w-[60px] md:max-w-[112px] controller-2 rounded-full opacity-50">
+                  <img src="./img/testimonial/testimonial-client-1.png" class="blur-[2px]" alt="">
                 </div>
-                <div class="testimonial-items hidden">
-                  <p class="text-white text-xl font-medium leading-normal">Working with Anam on my website redesign was a fantastic experience. They took my vision and turned it into a stunning website that exceeded my expectations. Anam is not only a talented web designer but also a great communicator. I appreciated their attention to detail and the way they made my website user-friendly and visually appealing.</p>
-                  <div class="testimonial-user-data py-6">
-                    <h4 class="text-red-main text-xl font-medium leading-normal">Jhon Doe</h4>
-                    <p class="text-white">Project manager</p>
-                  </div>
-                </div>
-                <div class="testimonial-controller flex justify-center md:justify-start gap-3">
-                  <span class="text-white"><i class="fa-solid fa-arrow-left-long"></i></span>
-                  <span class="text-red-main"><i class="fa-solid fa-arrow-right-long"></i></span>
+                <div class="max-h-28 max-w-[60px] md:max-w-[112px] controller-3 rounded-full opacity-50">
+                  <img src="./img/testimonial/testimonial-client-1.png" class="blur-[2px]" alt="">
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-span-12 order-1 md:order-2 md:col-span-4 xl:col-span-6 justify-items-end">
-            <div class="flex md:flex-col items-end justify-center md:justify-between gap-4 md:gap-10 text-end">
-              <div class="max-h-28 max-w-[60px] md:max-w-[112px] rounded-full">
-                <img src="./img/testimonial/testimonial-client-1.png" class="" alt="">
-              </div>
-              <div class="max-h-28 max-w-[60px] md:max-w-[112px] rounded-full opacity-50">
-                <img src="./img/testimonial/testimonial-client-1.png" class="blur-[2px]" alt="">
-              </div>
-              <div class="max-h-28 max-w-[60px] md:max-w-[112px] rounded-full opacity-50">
-                <img src="./img/testimonial/testimonial-client-1.png" class="blur-[2px]" alt="">
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
       <div class="left-gredient absolute right-0 top-0 min-w-[30vw] lg:min-w-[20vw] min-h-full bg-gradient-to-b from-transparent via-red-main/40 to-red-main -z-[1]"></div>
       <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black-main via-black-main/25 to-transparent min-h-[250px] -z-[2]"></div>
@@ -277,40 +276,40 @@
     <!-- testimonial section end  -->
 
     <!-- sercvices section start  -->
-    <section class="services-section min-h-screen flex items-center" id="secvices" data-scroll data-scroll-section>
-      <div class="container">
-        <div class="grid grid-cols-12">
+    <section class="services-section min-h-screen py-12 md:py-12 bg-black-main flex items-center" id="secvices" data-scroll data-scroll-section>
+      <div class="container px-4">
+        <div class="grid grid-cols-12 gap-6 lg:gap-0">
           <div class="col-span-12 md:col-span-6">
-            <div class="pt-[25vh] pb-[35vh] relative md:sticky" data-scroll data-scroll-sticky data-scroll-target="#secvices">
-              <h2 class="h2 text-white pb-6">Bringing</h2>
+            <div class="md:pt-[25vh] md:pb-[30vh] text-center md:text-start" data-scroll data-scroll-sticky data-scroll-target="#secvices">
+              <h2 class="h2 text-white pb-2 md:pb-6">Bringing</h2>
               <h2 class="h2 text-red-main pb-6">Digital Dreams <span class="text-white">to Life</span></h2>
-              <p class="leading-tight text-white lg:pr-[35%] pb-12">I'm dedicated to crafting exceptional web solutions that not only meet your needs but also exceed your expectations. Whether it's creating stunning websites, optimizing user experiences, or developing robust web applications, I take pride in delivering results that bring smiles and satisfaction to my clients. Together, let's embark on a journey to elevate your online presence and make your digital visions come to life.</p>
-              <a href="#" class="btn-red group">Start a Project <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+              <p class="text-white lg:pr-[35%] pb-12">I'm dedicated to crafting exceptional web solutions that not only meet your needs but also exceed your expectations. Whether it's creating stunning websites, optimizing user experiences, or developing robust web applications, I take pride in delivering results that bring smiles and satisfaction to my clients. Together, let's embark on a journey to elevate your online presence and make your digital visions come to life.</p>
+              <a href="#" class="btn-red group inline-block">Start a Project <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
             </div>
           </div>
-          <div class="col-span-12 md:col-span-6 py-[25vh]">
+          <div class="col-span-12 md:col-span-6 md:py-[25vh]">
             <div class="service-items space-y-12">
 
-              <div class="service text-end">
-                <span class="text-red-main text-4xl"><i class="fa-light fa-display-code"></i></span>
-                <h3 class="text-4xl py-6 text-white font-medium"><span class="text-red-main">Front-End</span> Web Design</h3>
-                <p class="text-white lg:ps-[35%]">Crafting visually appealing and responsive websites using HTML, CSS, and either Bootstrap or Tailwind CSS. Ensure your online presence looks great and functions flawlessly on all devices. Elevate your digital brand with a website that stands out and engages your audience.</p>
-                <div class="h-[2px] mt-12 bg-gradient-to-l from-red-main to-transparent lg:ms-[30%]"></div>
+              <div class="service text-center md:text-end lg:ps-[30%] py-12 group bg-black-main bg-opacity-0 transition-all ease-linear md:hover:pe-6 hover:bg-gradient-to-l hover:from-red-main hover:to-transparent hover:bg-opacity-0 ">
+                <span class="text-red-main text-4xl group-hover:text-white"><i class="fa-light fa-display-code"></i></span>
+                <h3 class="text-4xl py-6 text-white font-medium transition-all ease-linear duration-300 md:group-hover:font-bold"><span class="text-red-main group-hover:text-white">Front-End</span> Web Design</h3>
+                <p class="text-white">Crafting visually appealing and responsive websites using HTML, CSS, and either Bootstrap or Tailwind CSS. Ensure your online presence looks great and functions flawlessly on all devices. Elevate your digital brand with a website that stands out and engages your audience.</p>
+              </div>
+              <div class="h-[2px] mt-12 lg:ms-[30%] bg-gradient-to-l from-red-main to-transparent"></div>
+
+              <div class="service text-center md:text-end lg:ps-[30%] py-12 group bg-black-main bg-opacity-0 transition-all ease-linear md:hover:pe-6 hover:bg-gradient-to-l hover:from-red-main hover:to-transparent hover:bg-opacity-0 ">
+                <span class="text-red-main text-4xl group-hover:text-white"><i class="fa-brands fa-wordpress-simple"></i></span>
+                <h3 class="text-4xl py-6 text-white font-medium transition-all ease-linear duration-300 md:group-hover:font-bold"><span class="text-red-main group-hover:text-white">WordPress</span> Design Wizardry</h3>
+                <p class="text-white">Unlocking WordPress's potential with Elementor Pro, I craft visually stunning websites that engage and captivate your audience, ensuring seamless and responsive designs. Whether you're embarking on a new project or seeking a site makeover, I'm dedicated to making your online presence truly stand out.</p>
+              </div>
+              <div class="h-[2px] mt-12 lg:ms-[30%] bg-gradient-to-l from-red-main to-transparent"></div>
+
+              <div class="service text-center md:text-end lg:ps-[30%] py-12 group bg-black-main bg-opacity-0 transition-all ease-linear md:hover:pe-6 hover:bg-gradient-to-l hover:from-red-main hover:to-transparent hover:bg-opacity-0 ">
+                <span class="text-red-main text-4xl group-hover:text-white"><i class="fa-brands fa-laravel"></i></span>
+                <h3 class="text-4xl py-6 text-white font-medium transition-all ease-linear duration-300 md:group-hover:font-bold"><span class="text-red-main group-hover:text-white">PHP & Laravel</span> Web Apps</h3>
+                <p class="text-white">I develop feature-rich, scalable, and user-friendly web applications that cater to your specific needs. Whether you're looking to build a new project or enhance an existing one, I'm here to create web applications that are both functional and visually engaging.</p>
               </div>
               
-              <div class="service text-end">
-                <span class="text-red-main text-4xl"><i class="fa-brands fa-wordpress-simple"></i></span>
-                <h3 class="text-4xl py-6 text-white font-medium"><span class="text-red-main">WordPress</span> Design Wizardry</h3>
-                <p class="text-white lg:ps-[35%]">Unlocking WordPress's potential with Elementor Pro, I craft visually stunning websites that engage and captivate your audience, ensuring seamless and responsive designs. Whether you're embarking on a new project or seeking a site makeover, I'm dedicated to making your online presence truly stand out.</p>
-                <div class="h-[2px] mt-12 bg-gradient-to-l from-red-main to-transparent lg:ms-[30%]"></div>
-              </div>
-              
-              <div class="service text-end">
-                <span class="text-red-main text-4xl"><i class="fa-brands fa-laravel"></i></span>
-                <h3 class="text-4xl py-6 text-white font-medium"><span class="text-red-main">PHP & Laravel</span> Web Apps</h3>
-                <p class="text-white lg:ps-[35%]">I develop feature-rich, scalable, and user-friendly web applications that cater to your specific needs. Whether you're looking to build a new project or enhance an existing one, I'm here to create web applications that are both functional and visually engaging.</p>
-                <!-- <div class="h-[2px] mt-12 bg-gradient-to-l from-red-main to-transparent lg:ms-[30%]"></div> -->
-              </div>
             </div>
           </div>
         </div>
@@ -319,7 +318,8 @@
     </section>
     <!-- sercvices section end  -->
 
-    <section class="test-section min-h-screen bg-black-main py-12" data-scroll data-scroll-section>
+    <section class="test-section min-h-screen bg-black-main py-12 relative" data-scroll data-scroll-section>
+      <!-- <div class="absolute top-0 left-0 right-0 bg-gradient-to-t from-transparent via-black-main/40 to-black-main min-h-[250px] -z-[2]"></div> -->
 
     </section>
 

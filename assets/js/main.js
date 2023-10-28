@@ -1,5 +1,6 @@
 import '../css/style.css';
 import '../css/all.css';
+import '../css/locomotive-scroll.min.css';
 
 import LocomotiveScroll from 'locomotive-scroll';
 import gsap from "gsap";
@@ -9,11 +10,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
+const stickyElements = document.querySelectorAll('[data-scroll-sticky][data-scroll-target]');
+
+// Check if it's a smartphone (you may need to adjust this condition)
+if (window.innerWidth < 768) {
+  // Loop through the elements and clear the data-scroll-target attribute
+  stickyElements.forEach(element => {
+    element.removeAttribute('data-scroll-target');
+  });
+}
+
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("main"),
   smooth: true,
   smartphone: {
-    smooth: true
+    smooth: true,
+    "data-scroll-sticky": false
   },
   tablet: {
       smooth: true
@@ -41,6 +53,8 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+
+
 
 
 
@@ -110,6 +124,16 @@ gsap.to('.about-me-img',{
     trigger: '.about-me-img',
     scroller: 'main',
     start: 'top 60%',
+    end: '+=10%',
+    scrub: 2,
+}
+})
+gsap.to('.test-section',{
+  background: '#F44336',
+  scrollTrigger:{
+    trigger: '.test-section',
+    scroller: 'main',
+    start: 'top 65%',
     end: '+=10%',
     scrub: 2,
 }
