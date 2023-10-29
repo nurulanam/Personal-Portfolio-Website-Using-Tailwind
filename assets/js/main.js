@@ -20,6 +20,20 @@ if (window.innerWidth < 768) {
   });
 }
 
+const servicesDescription = document.querySelector('.services-desctiption'); // Correct the class name
+
+if (servicesDescription) {
+  const text = servicesDescription.textContent;
+  servicesDescription.innerHTML = [...text].map(char => `<span>${char}</span>`).join('');
+}
+
+const aboutMeDetails = document.querySelectorAll('.about-me-details p');
+
+aboutMeDetails.forEach(aboutMeDetails => {
+  const text = aboutMeDetails.textContent;
+  aboutMeDetails.innerHTML = [...text].map(char => `<span>${char}</span>`).join('');
+});
+
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("main"),
   smooth: true,
@@ -128,13 +142,54 @@ gsap.to('.about-me-img',{
     scrub: 2,
 }
 })
-gsap.to('.test-section',{
-  background: '#F44336',
-  scrollTrigger:{
-    trigger: '.test-section',
-    scroller: 'main',
-    start: 'top 65%',
-    end: '+=10%',
-    scrub: 2,
-}
+
+gsap.to('.about-me-details p span', {
+    color: 'white',
+    stagger: 1,
+    scrollTrigger:{
+        trigger: '.about-me-details p span',
+        scroller: 'main',
+        start: 'top 70%',
+        end: '+=20%',
+        scrub: 2,
+    }
 })
+
+gsap.to('.services-desctiption span', {
+    color: 'white',
+    stagger: 1,
+    scrollTrigger:{
+        trigger: '.services-desctiption span',
+        scroller: 'main',
+        start: 'top 70%',
+        end: '+=20%',
+        scrub: 2,
+    }
+})
+gsap.to('.case-study-section', {
+    background: '#F44336',
+    scrollTrigger: {
+      trigger: '.case-study-section',
+      scroller: 'main',
+      start: 'top 75%',
+      end: '+=10%',
+      scrub: 2,
+    }
+  });
+gsap.from('.case-study-section', {
+    marginLeft: '30%',
+    marginRight: '30%',
+  })
+gsap.to('.case-study-section', {
+    marginLeft: 0,
+    marginRight: 0,
+    stagger: 1,
+    scrollTrigger: {
+      trigger: '.case-study-section',
+      scroller: 'main',
+      start: 'top 60%',
+      end: '+=10%',
+      scrub: 2,
+    }
+  });
+  
