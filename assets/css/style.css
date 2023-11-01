@@ -10,12 +10,17 @@
 }
 @layer components{
     .nav-list-item{
-        @apply text-white font-medium;
+        @apply text-white font-semibold uppercase;
     }
     .btn-red{
         @apply bg-red-main text-white transition-all ease-linear hover:bg-red-600 font-medium px-6 py-3 rounded-lg;
     }
     .h2{
         @apply text-[45px] lg:text-[58px] leading-none font-semibold;
+    }
+    .my-style-item .text-stroke{
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width: 1.5px;
     }
 }
