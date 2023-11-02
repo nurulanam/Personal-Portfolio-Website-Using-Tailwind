@@ -97,7 +97,7 @@ gsap.to('.circle-laravel', {
   yoyo: true
 })
 
-timeline2.to('.banner-avater img',{ 
+timeline2.to('.banner-avater',{ 
   opacity: 1,
   delay: 1,
   duration: 1,
@@ -286,3 +286,23 @@ function horizontalLoop(items, config) {
     }
     return tl;
   }
+
+
+  gsap.to('.contact-section .contact-img', {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '.contact-section .contact-img',
+      scroller: 'main',
+      start: 'top 60%',
+      end: '+=10%',
+      scrub: 2,
+    }
+  });
+
+  gsap.to('.contact-section .contact-circle',{
+    rotation: 360,
+    duration: 8,
+    repeat: -1,
+    ease: "linear",
+    repeat: -1,
+  })
