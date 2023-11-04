@@ -34,6 +34,17 @@ aboutMeDetails.forEach(aboutMeDetails => {
   aboutMeDetails.innerHTML = [...text].map(char => `<span>${char}</span>`).join('');
 });
 
+const testimonialTextElements = document.querySelectorAll('.testimonial-text');
+
+if (testimonialTextElements) {
+  testimonialTextElements.forEach((testimonialText) => {
+    const text = testimonialText.textContent;
+    testimonialText.innerHTML = [...text].map((char) => `<span>${char}</span>`).join('');
+  });
+}
+
+
+
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("main"),
   smooth: true,
@@ -306,3 +317,78 @@ function horizontalLoop(items, config) {
     ease: "linear",
     repeat: -1,
   })
+
+
+
+
+  const testimonialItems = document.querySelectorAll('.testimonial-item');
+  const imageControllers = document.querySelectorAll('.img-controllers .img-controller-item');
+  let currentIndex = 0;
+  
+  function updateImageControllers(index) {
+    gsap.to(imageControllers, {
+        opacity: function(i) {
+            return i === index ? 1 : 0.5;
+        },
+        filter: function(i) {
+            return i === index ? 'blur(0px)' : 'blur(2px)';
+        },
+        duration: 0.5,
+    });
+  }
+  
+  function showTestimonial(index) {
+    const testimonialTextSpans = testimonialItems[index].querySelectorAll('.testimonial-text span');
+
+      gsap.to(testimonialItems, {
+          display: 'none',
+          opacity: 0,
+          duration: 0.5,
+          onComplete: function () {
+              testimonialItems[index].style.display = 'block';
+              gsap.to(testimonialItems[index], {
+                    opacity: 1,
+                    duration: 0.5,
+              });
+            gsap.from(testimonialTextSpans, {
+                color: '#6b7280',
+                stagger: 1,
+                scrollTrigger: {
+                trigger: testimonialTextSpans, // Use the span as the trigger
+                scroller: 'main',
+                start: 'top 75%',
+                end: '+=10%',
+                scrub: 2,
+                },
+            });
+              updateImageControllers(index);
+          }
+      });
+  }
+  
+  function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % testimonialItems.length;
+      showTestimonial(currentIndex);
+  }
+  
+  function prevTestimonial() {
+      currentIndex = (currentIndex - 1 + testimonialItems.length) % testimonialItems.length;
+      showTestimonial(currentIndex);
+  }
+  
+  // Add click event listeners to the image controllers
+  imageControllers.forEach((controller, index) => {
+      controller.addEventListener('click', () => {
+          currentIndex = index;
+          showTestimonial(currentIndex);
+      });
+  });
+  
+  document.querySelector('.controller-left').addEventListener('click', prevTestimonial);
+  document.querySelector('.controller-right').addEventListener('click', nextTestimonial);
+  
+  // Initialize the first testimonial
+  showTestimonial(currentIndex);
+  
+
+
