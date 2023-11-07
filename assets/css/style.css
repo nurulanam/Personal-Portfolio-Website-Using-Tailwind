@@ -18,9 +18,54 @@
     .h2{
         @apply text-[45px] lg:text-[58px] leading-none font-semibold;
     }
+    .recent-project-item{
+        @apply flex flex-col md:flex-row transition-all duration-200 ease-linear justify-between items-center relative text-white border-b-[1px] border-red-main py-6 group-hover:bg-red-main group-hover:px-5 ;
+    }
+    .recent-project-item-categories{
+        @apply text-center md:text-start font-semibold transition-all ease-linear flex items-center gap-2;
+    }
+    .recent-project-item-category{
+        @apply capitalize bg-red-main/30 border-[1px] border-red-main md:group-hover:opacity-0 rounded-full px-3 py-1;
+    }
+    .recent-project-item-thumbnail{
+        @apply absolute -left-12 md:group-hover:left-5 z-40 max-h-36 transition-all duration-200 ease-linear opacity-0 md:group-hover:opacity-100 border-[3px] border-red-main rounded-xl;
+    }
+    .testimonial-item{
+        @apply text-center md:text-start;
+    }
+    .testimonial-text{
+        @apply text-white text-xl font-medium leading-normal;
+    }
+    .testimonial-controller{
+        @apply flex justify-center md:justify-start gap-3;
+    }
+    .testimonial-controller-item{
+        @apply text-white transition-all ease-linear hover:text-red-main;
+    }
+    .img-controllers{
+        @apply flex md:flex-col items-end justify-center md:justify-between gap-4 md:gap-10 text-end;
+    }
+    .img-controller-item{
+        @apply max-h-28 max-w-[60px] md:max-w-[112px] rounded-full;
+    }
+    .my-style-item{
+        @apply shrink-0 px-4 tracking-wider text-3xl uppercase font-black;
+    }
     .my-style-item .text-stroke{
         -webkit-text-stroke: 1px;
         -webkit-text-stroke-color: white;
         -webkit-text-stroke-width: 1.5px;
+    }
+    .service-item{
+        @apply text-center md:text-end lg:ps-[30%] lg:hover:ps-[25%] py-12 bg-black-main bg-opacity-0 transition-all ease-linear md:hover:pe-[5%] hover:bg-gradient-to-l hover:from-red-main hover:to-transparent hover:bg-opacity-0;
+    }
+    .service-item-icon{
+        @apply text-red-main text-4xl group-hover:text-white;
+    }
+    .service-item-title{
+        @apply text-4xl py-6 text-white font-medium transition-all ease-linear duration-300;
+    }
+    .contact-input{
+        @apply bg-black-main w-full text-[22px] text-center md:text-start leading-normal text-white font-bold capitalize placeholder:text-gray-400 py-3 border-b-[1px] border-red-main focus-visible:outline-none;
     }
 }
