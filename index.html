@@ -10,24 +10,25 @@
 </head>
 
 <body class="overflow-x-hidden bg-dark-main">
-  <header class="px-4">
-    <nav class="bg-red-main backdrop-blur-3xl shadow-lg fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full flex justify-between xl:max-w-3xl max-w-md mx-auto mt-4 px-6 md:px-12 py-3 md:py-5 rounded-full">
-      <a href="./index.html" class="logo text-white font-medium text-2xl">Logo</a>
-      <ul class="flex justify-end items-center gap-5">
-        <li>
-          <a href="./projects.html" class="nav-list-item group">Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-        </li>
-        <li>
-          <a href="" class="nav-list-item group">Services <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-        </li>
-        <li>
-          <a href="" class="nav-list-item group">Contact <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  
   <!-- main container start  -->
   <main>
+    <header class="px-4">
+        <nav class="bg-red-main backdrop-blur-3xl shadow-lg fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full flex justify-between xl:max-w-3xl max-w-md mx-auto mt-4 px-6 md:px-12 py-3 md:py-5 rounded-full">
+          <a href="./index.html" class="logo text-white font-medium text-2xl">Logo</a>
+          <ul class="flex justify-end items-center gap-5">
+            <li>
+              <a href="./projects.html" class="nav-list-item group">Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+            </li>
+            <li>
+              <a href="" class="nav-list-item group">Services <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+            </li>
+            <li>
+              <a href="" class="nav-list-item group">Contact <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     <!-- banner section start -->
     <section
       class="banner min-h-screen py-24 md:py-12 flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('./../img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
@@ -41,8 +42,8 @@
               <li class="text-white opacity-0"><span class="text-red-main">#</span>Developer</li>
             </ul>
             <div class="banner-h text-center md:text-start">
-              <h1 class="opacity-0 text-white text-5xl lg:text-[80px] leading-none font-semibold">Hello,</h1>
-              <h1 class="opacity-0 text-white text-5xl lg:text-[80px] leading-none font-semibold">I'm <span class="text-red-main">Nurul</span> Anam.</h1>
+              <h1 class="opacity-0 text-white text-5xl lg:text-[80px] leading-tight font-semibold">Hello,</h1>
+              <h1 class="opacity-0 text-white text-5xl lg:text-[80px] leading-none font-semibold">I'm <span class="text-red-main">Nurul</span> Anam<span class="text-red-main">.</span></h1>
             </div>
             <p class="banner-p text-center md:text-start text-lg font-medium text-white opacity-0 pt-5 xl:pe-80">I take pride in my ability to deliver solutions that not only meet but exceed your expectations.</p>
             <a href="#aboutMe" class="flex justify-center md:justify-start" data-scroll-to>
@@ -90,8 +91,8 @@
     <!-- banner section end -->
 
     <!-- about me section start -->
-    <section class="min-h-screen py-12 md:py-12 flex items-center bg-black-main relative" id="aboutMe" data-scroll data-scroll-section>
-      <div class="container px-4">
+    <section class="min-h-screenflex items-center bg-black-main relative" id="aboutMe" data-scroll data-scroll-section>
+      <div class="container py-12  px-4">
         <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
           <div class="col-span-12 md:col-span-6" data-scroll data-scroll-speed="3">
             <div class="relative w-fit h-fit">
@@ -354,7 +355,10 @@
                     <h2 class="h2 text-white text-center md:text-start pb-12">Say <span class="text-red-main">Hi</span>!</h2>
                     <form action="#" class="space-y-6 text-center md:text-start">
                         <div>
-                            <input type="email" name="email" class="contact-input" placeholder="Your e-mail">
+                            <input type="text" name="name" class="contact-input" placeholder="full name">
+                        </div>
+                        <div>
+                            <input type="email" name="email" class="contact-input" placeholder="e-mail">
                         </div>
                         <div>
                             <textarea name="message" rows="8" class="contact-input" placeholder="Your input is valuable to me. Whether you have questions, ideas, or simply want to connect, don't hesitate to reach out. I'm here to listen and assist you on your journey."></textarea>    
@@ -374,7 +378,7 @@
     <!-- contact section end  -->
 
     <!-- footer start  -->
-    <footer class="bg-black-main" data-scroll data-scroll-section>
+    <footer class="bg-red-main" data-scroll data-scroll-section>
         <div class="container px-4 py-6">
             <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-4">
                 <p class="text-white">© 2023 dev-anam.com. All Rights Reserved.</p>
@@ -388,7 +392,6 @@
         </div>
     </footer>
     <!-- footer end  -->
-
 
   </main>
 <!-- Calendly link widget begin -->

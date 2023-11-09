@@ -6,26 +6,114 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"> -->
 </head>
 
 <body class="overflow-x-hidden bg-dark-main">
-  <nav
-    class="bg-red-main fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full flex justify-between xl:max-w-3xl max-w-md mx-auto mt-4 px-12 py-5 rounded-full"
-    data-scroll data-scroll-sticky data-scroll-speed="1">
-    <a href="./index.html" class="logo text-white font-medium text-2xl">Logo</a>
-    <ul class="flex justify-end items-center gap-5">
-      <li>
-        <a href="./projects.html" class="nav-list-item">Projects</a>
-      </li>
-      <li>
-        <a href="" class="nav-list-item">Services</a>
-      </li>
-      <li>
-        <a href="" class="nav-list-item">Contact</a>
-      </li>
-    </ul>
-  </nav>
+  <main>
+    <header class="px-4">
+        <nav class="bg-red-main backdrop-blur-3xl shadow-lg fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full flex justify-between xl:max-w-3xl max-w-md mx-auto mt-4 px-6 md:px-12 py-3 md:py-5 rounded-full">
+          <a href="./index.html" class="logo text-white font-medium text-2xl">Logo</a>
+          <ul class="flex justify-end items-center gap-5">
+            <li>
+              <a href="./projects.html" class="nav-list-item group">Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+            </li>
+            <li>
+              <a href="" class="nav-list-item group">Services <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+            </li>
+            <li>
+              <a href="" class="nav-list-item group">Contact <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <!-- banner section start -->
+    <section
+      class="banner min-h-screen py-24 md:py-12 flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('./../img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
+      data-scroll data-scroll-section>
+      <div class="container px-4">
+        <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
+          <div class="col-span-12 order-2 md:col-span-6 md:order-1">
+            <div class="banner-h text-center md:text-start">
+              <h1 class="opacity-0 text-white text-5xl lg:text-[80px] leading-tight font-semibold">My</h1>
+              <h1 class="opacity-0 text-white text-5xl lg:text-[80px] leading-tight font-semibold"><span class="text-red-main">Work</span> Collection<span class="text-red-main">.</span></h1>
+            </div>
+            <p class="banner-p text-center md:text-start text-lg font-medium text-white opacity-0 pt-5 xl:pe-52">Here are some web projects that demonstrate my dedication to quality and innovation. I'm thrilled to share my work in this ever-changing showcase, which includes anything from responsive site designs to interactive web apps.</p>
+            <a href="#allProjects" class="flex justify-center md:justify-start" data-scroll-to>
+              <button type="button" class="btn-red mt-12 opacity-0 group">Let’s Check <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button></a>
+          </div>
+          <div class="col-span-12 order-1 md:col-span-6 md:order-2 flex justify-center md:justify-end" data-scroll data-scroll-speed="3">
+            <div class="relative w-fit h-fit">
+                <img src="./../img/projects-banner-img.png" class="banner-avater opacity-0" alt="">
+                <img class="absolute brand opacity-0 -bottom-8 -left-10" src="./../img/brand.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="circle-php absolute top-20 right-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0" >
+        <p class="leading-[48px] text-xs font-bold">PHP</p>
+      </div>
+      <div class="circle-laravel absolute hidden md:inline-block bottom-20 left-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0">
+        <p class="leading-[48px] text-xs font-bold">Laravel</p>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black-main via-black-main/25 to-transparent min-h-[250px] -z-[1]"></div>
+    </section>
+    <!-- banner section end -->
+
+    <section class="min-h-screen flex items-center bg-black-main relative" id="allProjects" data-scroll data-scroll-section>
+        <div class="container py-0 px-4">
+            <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 items-center">
+                <div class="col-span-4 py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main transition-all ease-linear">
+                    <div class="rounded-lg">
+                        <img class="rounded-lg shadow-md" src="./../img/bannergredient1.png" alt="">
+                    </div>
+                    <h3 class="text-[36px] font-semibold text-white leading-tight">NH: Interior Designer Portfolio</h3>
+                    <p class="text-white leading-6">NH Interior Design's Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                    <div class="flex jusity-content-start items-center gap-x-4">
+                        <a href="#" class="btn-red group">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+                        <a href="#" class="btn-red group">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-span-4 h-full py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main -ml-1"></div>
+                <div class="col-span-4 h-full py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main -ml-1"></div>
+                <div class="col-span-4 h-full py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main"></div>
+                <div class="col-span-4 h-full py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main -ml-1">
+                    <div class="rounded-lg">
+                        <img class="rounded-lg shadow-md" src="./../img/projects/pos.png" alt="">
+                    </div>
+                    <h3 class="text-[36px] font-semibold text-white leading-tight">NH: Interior Designer Portfolio</h3>
+                    <p class="text-white leading-6">NH Interior Design's Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                    <div class="flex jusity-content-start items-center gap-x-4">
+                        <a href="#" class="btn-red group">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+                        <a href="#" class="btn-red group">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-span-4 h-full py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main -ml-1"></div>
+                <div class="col-span-4 h-full py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main"></div>
+                <div class="col-span-4 h-full py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main -ml-1"></div>
+                <div class="col-span-4 py-12 px-4 bg-black-main/30 backdrop-blur-sm space-y-8 border-x-[1px] border-red-main -ml-1">
+                    <div class="rounded-lg">
+                        <img class="rounded-lg shadow-md" src="./../img/bannergredient1.png" alt="">
+                    </div>
+                    <h3 class="text-[36px] font-semibold text-white leading-tight">NH: Interior Designer Portfolio</h3>
+                    <p class="text-white leading-6">NH Interior Design's Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                    <div class="flex jusity-content-start items-center gap-x-4">
+                        <a href="#" class="btn-red group">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+                        <a href="#" class="btn-red group">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-gredient absolute left-0 top-0 min-w-[30vw] lg:min-w-[20vw] min-h-screen bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]"></div>
+    </section>
+    </main>
+
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <!-- Calendly link widget end -->
+
   <script type="module" src="assets/js/main.js"></script>
 </body>
 
